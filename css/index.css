@@ -2,64 +2,119 @@
     text-decoration: none;
     font-size: 28px;
 }
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
-    object-fit: cover;
     font-weight: bold;
     color: #222222;
     letter-spacing: 1px;
 }
+
 .logo span {
     font-size: 18px;
     color: #b06b35;
     margin-left: 4px;
     margin-right: 25px;
 }
+
 .nav-links {
     margin-left: 180px;
     display: flex;
     gap: 30px;
     padding: 11px;
 }
+
 .nav-links a {
     margin: 2px;
     text-decoration: none;
     color: #333333;
     font-size: 16px;
 }
+
 .nav-links a:hover {
     color: #b06b35;
 }
+
 .main-img {
-     width: 100%;
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
     margin-top: 25px;
 }
 
-.hero{
-    margin: 0%;
-    height: 450px;
+.hero {
+    margin: 0;
+    min-height: 450px;
+    width: 90%;
     padding: 50px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-
 }
 
-.hero-img{
-     object-fit: cover;
-     width: 100%;
+.hero-content{
+    width: 45%;
 }
 
 .hero-content h1{
-    font-size:60px;
+    font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-content img{
+    object-fit: cover;
+    display: block;
+    height: 400px;
+    width: 400px;
+    justify-content: space-around;
+    margin-left: 50px;
+    
+}
+
+.section{
+    display:flex;
+    justify-content: center;
+    align-items:stretch;
+    gap:20px;
+    margin: 0 auto;
+    padding:20px;
+    
+}
+
+.women-section{
+    flex:1;
+    padding:20px;
+    min-width:250px;
+    text-align:center;
+    border:2px;
+    background-color:#e6e4e4;
+    border-radius:10px;
+}
+
+.women-section h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b06b35;
+    margin-bottom: 30px;
+}
+
+.women-section p{
+    font-size: 16px;
+    color:#4a4a4a;
+    margin-bottom: 30px;
+}
+
+.women-section img{
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
