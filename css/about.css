@@ -1,6 +1,4 @@
 
-
-
 .about-page {
     margin: 0;
     padding: 0;
@@ -64,16 +62,11 @@
 .about-page .nav-links a.active {
     color: #b06b35;
 }
-
-
-/* ==================== PAGE TITLE ==================== */
-
 .about-page .main-title {
     text-align: center;
     margin: 0 auto 35px;
     padding: 35px 20px 20px;
 }
-
 .about-page .main-title h1 {
     margin: 0 0 10px;
     font-size: 40px;
@@ -86,10 +79,6 @@
     font-size: 16px;
     color: #666666;
 }
-
-
-/* ==================== ABOUT SECTIONS ==================== */
-
 .about-page .about-section {
     width: 88%;
     max-width: 1100px;
@@ -110,8 +99,6 @@
 }
 
 
-/* ==================== OBJECTIVES ==================== */
-
 .about-page .objectives-list {
     padding-left: 25px;
     margin: 0;
@@ -123,10 +110,6 @@
     margin-bottom: 7px;
     padding-left: 4px;
 }
-
-
-/* ==================== CATEGORIES ==================== */
-
 .about-page .category-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -160,10 +143,6 @@
     font-size: 16px;
     color: #333333;
 }
-
-
-/* ==================== TEAM SECTION ==================== */
-
 .about-page .team-section {
     width: 88%;
     max-width: 1100px;
@@ -185,10 +164,6 @@
     font-style: italic;
     color: #666666;
 }
-
-
-/* ==================== TEAM LEAD CARD ==================== */
-
 .about-page .lead-card {
     width: 250px;
     max-width: 100%;
@@ -234,10 +209,6 @@
     font-weight: bold;
     color: #b06b35 ;
 }
-
-
-/* ==================== TEAM MEMBER CARDS ==================== */
-
 .about-page .together-title {
     margin: 35px 0 20px;
     font-size: 25px;
@@ -290,9 +261,6 @@
         gap: 25px;
     }
 }
-
-
-/* ==================== MOBILE ==================== */
 
 @media (max-width: 600px) {
 
