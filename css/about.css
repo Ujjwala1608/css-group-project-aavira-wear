@@ -1,310 +1,366 @@
-*{
+
+
+
+.about-page {
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: none;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222222;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.about-page main {
+    width: 100%;
+}
+
+
+
+.about-page .header {
+    width: 100%;
+    min-height: 85px;
+    padding: 15px 6%;
     box-sizing: border-box;
-}
-
-body{
-    font-family: "Times New Roman", Times, serif;
-    background-color: #ffffff;
-    color: #111827;
-    max-width: 1200px;
-    margin: auto;
-    padding: 25px 40px;
-    line-height: 1.6;
-}
-
-
-.main-title{
-    text-align: center;
-    font-size: 42px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    margin-top:20px;
-    color:black;
-}
-
-.nav-bar{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0;
-    border-top: 1px solid #b7ccc7;
-    border-bottom: 1px solid #b7c0cc;
-    padding: 10px 0;
-    margin-bottom: 35px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #e6e4e5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.nav-bar a{
-    color: #0645ad;
+.about-page .logo {
+    color: #151515;
     text-decoration: none;
-    padding: 0 12px;
-    border-right: 1px solid #aaa;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-.nav-bar a:last-child {
-    border-right: none;
+.about-page .logo span {
+    color: #b06b35;
 }
 
-.nav-bar a:hover {
-    text-decoration: underline;
+.about-page .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.about-section {
-    margin-bottom: 28px;
+.about-page .nav-links a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.about-section h2 {
-    font-size: 28px;
-    margin-bottom: 8px;
+.about-page .nav-links a:hover,
+.about-page .nav-links a.active {
+    color: #b06b35;
 }
 
-.about-section p {
-    font-size: 17px;
-    color: #303b50;
+
+/* ==================== PAGE TITLE ==================== */
+
+.about-page .main-title {
+    text-align: center;
+    margin: 0 auto 35px;
+    padding: 35px 20px 20px;
+}
+
+.about-page .main-title h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #111111;
+}
+
+.about-page .main-title p {
+    margin: 0;
+    font-size: 16px;
+    color: #666666;
+}
+
+
+/* ==================== ABOUT SECTIONS ==================== */
+
+.about-page .about-section {
+    width: 88%;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.about-page .about-section h2 {
+    margin: 0 0 12px;
+    font-size: 27px;
+    color: #222222;
+}
+
+.about-page .about-section > p {
     max-width: 950px;
+    margin: 0;
+    font-size: 16px;
+    color: #444444;
 }
 
-.objectives-list {
-    padding-left: 30px;
-    font-size: 17px;
-    color: #303b50;
+
+/* ==================== OBJECTIVES ==================== */
+
+.about-page .objectives-list {
+    padding-left: 25px;
+    margin: 0;
+    color: #444444;
+    font-size: 16px;
 }
 
-.objectives-list li {
-    margin-bottom: 5px;
+.about-page .objectives-list li {
+    margin-bottom: 7px;
+    padding-left: 4px;
 }
 
-.category-list {
+
+/* ==================== CATEGORIES ==================== */
+
+.about-page .category-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px 60px;
-    margin-top: 15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 35px;
     max-width: 850px;
+    margin-top: 18px;
 }
 
-.category {
+.about-page .category {
     display: flex;
     align-items: center;
     gap: 15px;
+    min-height: 55px;
 }
 
-.category span {
-    width: 40px;
-    height: 40px;
+.about-page .category span {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e9eef5;
-    border-radius: 5px;
-    font-size: 23px;
+    border-radius: 7px;
+    color: #b06b35;
+    font-size: 21px;
 }
 
-.category p {
-    font-size: 17px;
-}
-
-
-hr {
-    border: none;
-    border-top: 1px solid #c5ccd5;
-    margin: 35px 0 20px;
+.about-page .category p {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
 }
 
 
-.team-section {
+/* ==================== TEAM SECTION ==================== */
+
+.about-page .team-section {
+    width: 88%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding-top: 30px;
+    border-top: 1px solid #dddddd;
     text-align: center;
 }
 
-.team-section > h2 {
-    font-size: 34px;
-    margin-bottom: 5px;
+.about-page .team-section > h2 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #222222;
 }
 
-.team-subtitle {
-    font-size: 18px;
+.about-page .team-subtitle {
+    margin: 0 0 28px;
+    font-size: 16px;
     font-style: italic;
-    margin-bottom: 25px;
+    color: #666666;
 }
 
 
-.lead-card {
+/* ==================== TEAM LEAD CARD ==================== */
+
+.about-page .lead-card {
     width: 250px;
-    margin: auto;
-    border: 1px solid #c7d0dc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
 }
 
-.lead-card img {
+.about-page .lead-card:hover,
+.about-page .profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-page .lead-card img {
+    display: block;
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-radius: 3px;
+    object-position: center;
+    border-radius: 7px;
 }
 
-.lead-card h3 {
-    font-size: 18px;
-    margin-top: 5px;
+.about-page .lead-card h3,
+.about-page .profile-card h3 {
+    margin: 10px 0 4px;
+    font-size: 19px;
+    color: #222222;
 }
 
-.lead-card p {
+.about-page .lead-card p,
+.about-page .profile-card p {
+    margin: 5px 0;
     font-size: 14px;
+    color: #555555;
 }
 
-.role {
-    color: #344054;
+.about-page .role {
     font-weight: bold;
+    color: #b06b35 ;
 }
 
 
-.together-title {
-    margin: 25px 0 15px;
+/* ==================== TEAM MEMBER CARDS ==================== */
+
+.about-page .together-title {
+    margin: 35px 0 20px;
+    font-size: 25px;
 }
 
-.team-grid {
-    display:flex;
-    grid-template-row: repeat(4, 1fr);
-    gap: 20px;
-     justify-content: space-around;
-     flex-direction:row;
+.about-page .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-.profile-conatiner{
-    display:flex;
-    justify-content:center;
-    align-items:stretch;
-    gap:30px;
-    flex-wrap:wrap;
+.about-page .profile-card {
+    width: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
 }
 
-
-.profile-card {
-    border: 1px solid #c7d0dc;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #fff;
-     justify-content: space-between;
-     width:250px;
-      flex-direction:row;
-    
-}
-
-.profile-card img {
+.about-page .profile-card img {
+    display: block;
     width: 100%;
-    height: 190px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 3px;
+    object-position: center;
+    border-radius: 7px;
 }
-
-.profile-card h3 {
-    font-size: 18px;
-    margin-top: 7px;
-}
-
-.profile-card p {
-    font-size: 14px;
-}
-
-
 @media (max-width: 900px) {
 
-    body {
+    .about-page .header {
+        flex-direction: column;
+        justify-content: center;
         padding: 20px;
     }
 
-    .main-title {
-        font-size: 34px;
+    .about-page .nav-links {
+        gap: 18px;
     }
 
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .about-page .category-list {
+        gap: 12px 20px;
     }
 
-    .category-list {
-        gap: 12px 30px;
+    .about-page .footer-content {
+        gap: 25px;
     }
 }
 
+
+/* ==================== MOBILE ==================== */
+
 @media (max-width: 600px) {
 
-    body {
-        padding: 15px;
+    .about-page .header {
+        gap: 15px;
     }
 
-    .main-title {
+    .about-page .logo {
+        font-size: 23px;
+    }
+
+    .about-page .nav-links {
+        gap: 12px 18px;
+    }
+
+    .about-page .nav-links a {
+        font-size: 14px;
+    }
+
+    .about-page .main-title {
+        padding: 28px 12px 15px;
+        margin-bottom: 25px;
+    }
+
+    .about-page .main-title h1 {
         font-size: 27px;
         letter-spacing: 1px;
     }
 
-    .nav-bar {
-        gap: 5px 0;
+    .about-page .main-title p {
+        font-size: 14px;
     }
 
-    .nav-bar a {
-        font-size: 13px;
-        padding: 2px 7px;
+    .about-page .about-section,
+    .about-page .team-section {
+        width: 90%;
     }
 
-    .about-section h2 {
+    .about-page .about-section h2 {
         font-size: 23px;
     }
 
-    .about-section p,
-    .objectives-list,
-    .category p {
-        font-size: 15px;
+    .about-page .about-section > p,
+    .about-page .objectives-list,
+    .about-page .category p {
+        font-size: 14px;
     }
 
-    .category-list {
+    .about-page .category-list {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .team-section > h2 {
-        font-size: 27px;
+    .about-page .team-section > h2 {
+        font-size: 26px;
     }
 
-    .team-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+    .about-page .profile-container {
+        gap: 18px;
     }
 
-    .profile-card img {
-        height: 160px;
+    .about-page .profile-card {
+        width: 100%;
+        max-width: 280px;
     }
 
-    .profile-card h3 {
-        font-size: 16px;
-    }
-
-    .profile-card p {
-        font-size: 12px;
-    }
-
-    .lead-card {
-        width: 180px;
-    }
-}
-
-
-@media (max-width: 400px) {
-
-    .main-title {
-        font-size: 23px;
-    }
-
-    .team-grid {
+    .about-page .footer-content {
         grid-template-columns: 1fr;
-    }
-
-    .profile-card img {
-        height: 220px;
-    }
-
-    .nav-bar a {
-        font-size: 12px;
+        gap: 25px;
     }
 }
