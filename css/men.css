@@ -252,8 +252,6 @@ nav a.active {
         max-width: 300px; 
     } 
 }
-/* ================= FOOTER ================= */
-
 .footer {
     width: 100%;
     background-color: #222;
@@ -289,9 +287,6 @@ nav a.active {
     line-height: 1.6;
     margin: 8px 0;
 }
-
-/* Quick Links */
-
 .footer-content > div:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -319,9 +314,6 @@ nav a.active {
 .footer-content > div:nth-child(3) a:hover {
     color: white;
 }
-
-/* Social Media */
-
 .social-media {
     display: flex;
     gap: 12px;
@@ -339,9 +331,6 @@ nav a.active {
 .social-media img:hover {
     transform: scale(1.15);
 }
-
-/* Copyright */
-
 .copyright {
     margin-top: 30px;
     padding-top: 15px;
@@ -352,10 +341,6 @@ nav a.active {
     font-size: 14px;
     color: #aaa;
 }
-
-
-/* ================= TABLET ================= */
-
 @media (max-width: 900px) {
 
     .footer {
@@ -372,10 +357,6 @@ nav a.active {
         grid-column: 1 / -1;
     }
 }
-
-
-/* ================= MOBILE ================= */
-
 @media (max-width: 400px) {
 
     .footer {
