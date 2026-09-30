@@ -24,8 +24,8 @@ The main purpose of this project is to create a user-friendly and visually attra
 
 ## Technologies Used
 
-- **HTML5** – Used to create the structure of web pages.
-- **CSS3** – Used for styling, layout, colors, buttons, cards, and overall design.
+- **HTML** – Used to create the structure of web pages.
+- **CSS** – Used for styling, layout, colors, buttons, cards, and overall design.
 - **Visual Studio Code** – Used for writing and editing the code.
 - **Web Browser** – Used to run and test the website.
 
@@ -79,6 +79,8 @@ The Men's page displays different men's clothing products such as:
 - No JavaScript used
 
 ---
-
+## Contributors
+ <img src="https://contrib.rocks/image?repo=Ujjwala1608/css-group-project-aavira-wear" />
+</a>
 
 

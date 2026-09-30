@@ -30,6 +30,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 .categories {
     width: 90%;
     margin: 50px auto;
@@ -48,6 +49,7 @@
 
 .category-image {
     width: 100%;
+
     height: 400px;
 }
 
@@ -85,41 +87,41 @@
 .category-info button:hover {
     background-color: #555;
 }
+/* ================= LOGO ================= */
 
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-/* =========================================
-   TABLET RESPONSIVE
-   769px - 1024px
-========================================= */
+.logo img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
 
-@media (max-width: 1024px) {
-
-    /* Main Image */
-
+.logo a {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 900px) {
     .main-img {
         width: 100%;
         max-width: 100%;
         height: auto;
         margin-top: 20px;
     }
-
-
-    /* Hero */
-
     .hero {
         width: 100%;
         height: auto;
         min-height: 400px;
-
         padding: 40px 5%;
         box-sizing: border-box;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         gap: 25px;
-
         background-size: cover;
         background-position: center;
     }
@@ -139,10 +141,6 @@
         height: auto;
         object-fit: cover;
     }
-
-
-    /* Categories */
-
     .categories {
         width: 90%;
         margin: 40px auto;
@@ -184,10 +182,6 @@
     .category-info button {
         padding: 10px 22px;
     }
-
-
-    /* Navbar */
-
     .navbar {
         display: none;
     }
@@ -200,44 +194,24 @@
         cursor: pointer;
     }
 }
-
-
-/* =========================================
-   MOBILE RESPONSIVE
-   0px - 768px
-========================================= */
-
-@media (max-width: 768px) {
-
-    /* Main Image */
-
+@media (max-width: 400px) {
     .main-img {
         width: 100%;
         max-width: 100%;
         height: auto;
         margin-top: 15px;
     }
-
-
-    /* Hero */
-
     .hero {
         width: 100%;
         height: auto;
         min-height: 500px;
-
         padding: 35px 5%;
-
         box-sizing: border-box;
-
         display: flex;
         flex-direction: column;
-
         align-items: center;
         justify-content: center;
-
         gap: 25px;
-
         background-size: cover;
         background-position: center;
     }
@@ -259,10 +233,6 @@
         height: auto;
         object-fit: cover;
     }
-
-
-    /* Categories */
-
     .categories {
         width: 90%;
         margin: 35px auto;
@@ -311,10 +281,6 @@
         padding: 10px 24px;
         font-size: 15px;
     }
-
-
-    /* Navbar */
-
     .navbar {
         display: none;
     }
@@ -325,82 +291,5 @@
         border: none;
         background: none;
         cursor: pointer;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-
-    .main-img {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .hero {
-        min-height: 450px;
-
-        padding: 25px 4%;
-
-        gap: 20px;
-
-        background-position: center;
-    }
-
-    .hero-content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    .hero-img {
-        width: 95%;
-        max-width: 350px;
-    }
-
-
-    .categories {
-        width: 92%;
-        margin: 30px auto;
-
-        gap: 20px;
-    }
-
-    .category-card {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .category-image {
-        height: 230px;
-    }
-
-    .category-info {
-        padding: 15px;
-    }
-
-    .category-info h2 {
-        font-size: 21px;
-    }
-
-    .category-info p {
-        font-size: 14px;
-        line-height: 1.4;
-        margin-bottom: 15px;
-    }
-
-    .category-info button {
-        padding: 9px 20px;
-        font-size: 14px;
-    }
-
-
-    .menu-btn {
-        font-size: 26px;
     }
 }
